@@ -2,6 +2,7 @@ import { Footer, Navbar } from '../components';
 import './global.css';
 
 export const metadata = {
+  metadataBase: new URL('http://localhost:4200/'),
   title: {
     default: 'CarHUB',
     template: `CarHUB | %s`,

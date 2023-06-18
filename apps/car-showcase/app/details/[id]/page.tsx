@@ -12,10 +12,16 @@ export async function generateMetadata({
     id: string;
   };
 }) {
-  console.log('id', params.id);
   return {
     title: `detail of car ${params.id}`,
     description: 'car detail page',
+    alternates: {
+      canonical: `/detail/${params.id}`,
+      languages: {
+        'en-US': `/en-US/details/${params.id}`,
+        'de-DE': `/de-DE/details/${params.id}`,
+      },
+    },
   };
 }
 const CarDetail = () => {
