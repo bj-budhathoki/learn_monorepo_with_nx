@@ -1,0 +1,17 @@
+.nav {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
