@@ -67,6 +67,6 @@
   },
   "validate-branch-name": {
     "pattern": "^(master|main|develop){1}$|^(EAS-d*).+",
-    "errorMsg": "your own error message"
+    "errorMsg": "Invalid branch name"
   }
 }
