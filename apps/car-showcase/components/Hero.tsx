@@ -1,12 +1,10 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import CSButton from './CSButton';
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import CSButton from './CSButton'
 
 const Hero = () => {
-  const handleScroll = () => {
-    console.log('hello');
-  };
+  const handleScroll = () => null
   return (
     <div className="overflow-hidden hero">
       <div className="flex-1 pt-36 padding-x">
@@ -37,7 +35,7 @@ const Hero = () => {
         <div className="hero__image-overlay" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

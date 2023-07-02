@@ -1,11 +1,12 @@
-'use client';
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+'use client'
+import React from 'react'
 interface CarCardProps {
-  car: any;
+  car: any
 }
 
 const CarCard = ({ car }: CarCardProps) => {
-  const { city_mpg, year, make, model, transmission, drive } = car;
+  const { make, model } = car
 
   return (
     <div className="car-card group">
@@ -15,7 +16,7 @@ const CarCard = ({ car }: CarCardProps) => {
         </h2>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CarCard;
+export default CarCard

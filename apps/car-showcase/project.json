@@ -62,6 +62,14 @@
       "options": {
         "lintFilePatterns": ["apps/car-showcase/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc -p tsconfig.json --noEmit"],
+        "cwd": "apps/car-showcase",
+        "forwardAllArgs": false
+      }
     }
   },
   "tags": []

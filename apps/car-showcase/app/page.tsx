@@ -1,14 +1,13 @@
-import { CarCard, Hero, SearchBar } from '../components';
-import { fetchCars } from '../services/cars';
+import { CarCard, Hero, SearchBar } from '../components'
+import { fetchCars } from '../services/cars'
 export const metadata = {
   title: 'Home page',
   description: 'Home page for carHUB',
-};
+}
 
 export default async function PageOne() {
-  const allCars = await fetchCars();
-  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
-
+  const allCars = await fetchCars()
+  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars
   return (
     <main>
       <Hero />
@@ -40,5 +39,5 @@ export default async function PageOne() {
         )}
       </div>
     </main>
-  );
+  )
 }
