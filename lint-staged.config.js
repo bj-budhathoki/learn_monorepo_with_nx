@@ -5,6 +5,5 @@ module.exports = {
   '{apps,libs,tools}/**/*.{js,ts,jsx,tsx,json,css}': [
     (files) => `nx affected:lint --uncommitted --files=${files.join(',')}`,
     (files) => `nx format:write  --uncommitted --files=${files.join(',')}`,
-    (files) => `npx validate-branch-name`,
   ],
 }
